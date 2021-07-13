@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Form </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container_1">
+    <div class="card_1">
+      <p class="h3 border-b">Sign Up</p>
+
+      <form class="row g-3 form_1" action="table.html">
+        <div class="col-md-6">
+          <label for="first_name" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="first_name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="last_name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last_name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="contact_number" class="form-label">Contact Number</label>
+          <input type="text" class="form-control" id="contact_number" required>
+        </div>
+        <div class="col-md-6">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="dob" required>
+        </div>
+        <div class="col-md-6 input_color">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control input_color" id="city" required>
+        </div>
+        <div class="mb-3">
+          <label for="breif_bio" class="form-label">Breif Bio</label>
+          <textarea class="form-control" id="breif_bio" rows="2" required></textarea>
+        </div>
+
+        <div class="btn-submit">
+          <button type="submit" onclick="onSubmit()" class="btn_1 ">Submit</button>
+        </div>
+      </form>
+    </div>
+    <p class="data"></p>
+  </div>
+  <p class="fname"></p>
+  <p class="lname"></p>
+  <p class="email"></p>
+  <p class="dob"></p>
+  <p class="city"></p>
+  <p class="contact"></p>
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+</body>
+
+</html>
